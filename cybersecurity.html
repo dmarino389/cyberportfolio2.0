@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cybersecurity Projects</h1>
+        <a href="index.html">Go Back to Home</a>
+    </header>
+    <main>
+        <p>Explore my cybersecurity projects and download related resources.</p>
+        <section id="password-strength-checker">
+          <h2>Password Strength Checker</h2>
+          <p>Type a password to check its strength:</p>
+          <input type="password" id="password" placeholder="Enter your password" oninput="checkPasswordStrength()">
+          <div id="strength-indicator" style="width: 100%; height: 10px; background-color: gray; margin-top: 10px;"></div>
+          <p id="strength-message" style="font-weight: bold; margin-top: 10px;">Enter a Password</p>
+      </section>
+      <section id="data-encryption-demo">
+        <h2>Data Encryption Demo</h2>
+        <p>
+            This project demonstrates how to encrypt and decrypt data using Python and the <code>cryptography</code> library. The encryption method used is symmetric encryption, where the same key is used for both encryption and decryption.
+        </p>
+        <h3>Steps:</h3>
+        <ul>
+            <li>Generate a secret key using the <code>Fernet</code> module.</li>
+            <li>Encrypt a sample message and save it to a file.</li>
+            <li>Decrypt the message using the saved key.</li>
+        </ul>
+      
+        <h3>Symmetric vs. Asymmetric Encryption:</h3>
+        <p>
+            <strong>Symmetric Encryption:</strong> Uses the same key for both encryption and decryption. It's fast and suitable for securing large amounts of data. Example: AES, Fernet.
+        </p>
+        <p>
+            <strong>Asymmetric Encryption:</strong> Uses a public key for encryption and a private key for decryption. It's often used for secure communications and key exchange. Example: RSA.
+        </p>
+    </section>
+    
+      <script src="password-checker.js"></script>
+      
+        <h2>Downloadable Files</h2>
+        <ul>
+            <li><a href="downloads/risk_assessment.pdf" download>Download Risk Assessment Report (PDF)</a></li>
+            <li><a href="downloads/compliance_policy.docx" download>Download Compliance Policy (DOCX)</a></li>
+            <li><a href="downloads/incident_response_plan.pdf" download>Download Incident Response Plan (PDF)</a></li>
+            <li><a href="#data-encryption-demo" class="link link-blue">Data Encryption Demo</a></li>
+
+        </ul>
+    </main>
+</body>
+</html>
